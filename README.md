@@ -7,4 +7,4 @@
 #### 项目环境
 - node@v6.6.0
 - mongoDB@v2.4.9
-- meteor@
+- meteor@v1.4.3.2
