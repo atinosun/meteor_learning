@@ -25,7 +25,8 @@ Template.hello.helpers({
 
 Template.info.helpers({
     infotext(){
-        return Tempalte.instance().infotext.get();
+        return Template.instance().infotext.get();
+        //return 'hello';
     },
 });
 
