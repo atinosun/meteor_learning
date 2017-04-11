@@ -71,4 +71,14 @@ counter的值。
 参数，event为事件对象，instance为模板实例对象，通过instance
 可以访问此模板中的属性。
 
+推荐的资源：
+- Robomongo：可视化的MongoDB客户端。
+- Dash：可以离线文档的工具。
+- mongol：是一个扩展包，可以用来辅助开发过程中的调试。
+可以在浏览器中查看数据库的数据并进行修改和调试。
+    - 安装命令：``meteor add msavin:mongol``
+    - 使用Control+M可以打开/关闭mongol的界面。
+- [官方网站](https://www.meteor.com)
+- [Meteor扩展包资源站](https://atmospherejs.com/)
+
 
