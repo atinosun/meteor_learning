@@ -9,6 +9,10 @@ Template.hello.onCreated(function helloOnCreated() {
     this.item = new ReactiveVar(1);
 });
 
+Template.info.onCreated(function infoOnCreated() {
+    this.infotext = new ReactiveVar('hello');
+});
+
 Template.hello.helpers({
     counter() {
         return Template.instance().counter.get();
@@ -18,13 +22,10 @@ Template.hello.helpers({
     }
 });
 
-Template.info.onCreated(function infoOnCreated() {
-    this.infotext = new ReactiveVar(1);
-});
 
 Template.info.helpers({
     infotext(){
-        return Template.instance().infotext().get();
+        return Tempalte.instance().infotext.get();
     },
 });
 
@@ -37,7 +38,7 @@ Template.hello.events({
 });
 
 Template.info.events({
-    'click button'(event,instance){
-        instance.infotext.set(instance.infotext.get()+10);
+    'click button'(event, instance){
+        instance.infotext.set('你好');
     },
 });
