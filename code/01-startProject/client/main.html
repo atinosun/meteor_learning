@@ -1,0 +1,21 @@
+<head>
+    <title>01-startProject</title>
+</head>
+
+<body>
+<h1>Welcome to Meteor!</h1>
+
+{{> hello}}
+{{> info}}
+</body>
+
+<template name="hello">
+    <button>Click Me{{item}}</button>
+    <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="info">
+    <h2>Learn Meteor!{{infotext}}</h2>
+    <h3>看上面</h3>
+    <button>click to change the info text</button>
+</template>
