@@ -12,14 +12,13 @@ Template.picker.onRendered(function(){
 
 Template.picker.events({
     'click button': function (event, template) {
-        event.preventDefault();
+        /*event.preventDefault();*/
 
         var picker = $('.datetimepicker');
         //获取datetimepicker的值
-        var dateTime = picker.data('DateTimePicker'.date());
+        var dateTime = picker.data('DateTimePicker').date();
 
         //格式化日期格式
-
         var ret = dateTime.format('MMMM Do YYYY, h:mm:ss a');
         alert(ret);
     },

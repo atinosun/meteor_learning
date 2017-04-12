@@ -1,5 +1,5 @@
 <head>
-    <title>02-myProject</title>
+    <title>02-templateProject</title>
 </head>
 <body>
 {{>localhelper}}
@@ -11,32 +11,32 @@
 <template name="localhelper">
     <p>{{name}}</p>
     {{#if image}}
-    <img src="{{image.src}}"/>
+        <img src="{{image.src}}"/>
     {{/if}}
     {{#if skills}}
-    {{#each skills}}
-    <p>技能：{{this}}</p>
-    {{/each}}
-    {{#if hasMore skills}}
-    <a href="/skills">more...</a>
-    {{/if}}
+        {{#each skills}}
+            <p>技能：{{this}}</p>
+        {{/each}}
+        {{#if hasMore skills}}
+            <a href="/skills">more...</a>
+        {{/if}}
     {{/if}}
 
 </template>
 
 <template name="templateA">
     {{#if isLogin}}
-    <p>已登录A</p>
+        <p>已登录A</p>
     {{else}}
-    <p>未登录A</p>
+        <p>未登录A</p>
     {{/if}}
 </template>
 
 <template name="templateB">
     {{#if isLogin}}
-    <p>已登录B</p>
+        <p>已登录B</p>
     {{else}}
-    <p>未登录B</p>
+        <p>未登录B</p>
     {{/if}}
 </template>
 

@@ -21,7 +21,6 @@ Template.localhelper.helpers({
 Template.localhelper.events({
     'click a': function (event, template) {
         event.preventDefault();
-        alert(1);
     }
 })
 ;
